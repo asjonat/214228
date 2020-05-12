@@ -1,12 +1,66 @@
 @import '_variables';
 @import '_font';
 * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $sutfont;
+}
+
+.navbar {
+    background-color: $bgw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45%;
+    height: 50px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu {
+    list-style-type: none;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20%;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+}
+
+a:hover {
+    color: rgba($color: #00ff80, $alpha: 1.0);
 }
 
 .container {
+    max-width: 1920px;
     width: 100%;
-    margin: 0 auto;
+    .banner {
+        align-items: center;
+        background-image: url(../pic/3.webp);
+        min-height: 600px;
+        opacity: 0.85;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin: 1rem;
+        margin-top: 4rem;
+    }
 }
